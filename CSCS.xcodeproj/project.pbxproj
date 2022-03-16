@@ -31,6 +31,12 @@
 		96F071AB26EF96A900CD9F0A /* StatsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F0719F26EF96A900CD9F0A /* StatsWidget.swift */; };
 		96F071AC26EF96BC00CD9F0A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96F0718D26EF969200CD9F0A /* Localizable.strings */; };
 		96F071B426EF975400CD9F0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96F071B326EF975400CD9F0A /* GoogleService-Info.plist */; };
+		DE2B155227E21C38005280DB /* OnboardingScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B155127E21C38005280DB /* OnboardingScope.swift */; };
+		DE2B155527E21D2C005280DB /* SSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B155427E21D2C005280DB /* SSlideView.swift */; };
+		DE2B155727E21D3A005280DB /* SSlideModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B155627E21D3A005280DB /* SSlideModesView.swift */; };
+		DE2B155927E21D53005280DB /* SSlideReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B155827E21D53005280DB /* SSlideReferencesView.swift */; };
+		DE2B155C27E21E69005280DB /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B155B27E21E69005280DB /* DefaultRequestWrapper.swift */; };
+		DE2B155E27E21E79005280DB /* XORRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B155D27E21E79005280DB /* XORRequestWrapper.swift */; };
 		DEE1AB19277C5BCC004E6187 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1A9DA277C5BCC004E6187 /* UIColorExtension.swift */; };
 		DEE1AB1A277C5BCC004E6187 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1A9DB277C5BCC004E6187 /* Collection+Extension.swift */; };
 		DEE1AB1B277C5BCC004E6187 /* RestApiTransportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1A9DC277C5BCC004E6187 /* RestApiTransportExtension.swift */; };
@@ -330,6 +336,12 @@
 		96F071B326EF975400CD9F0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		96F071B526EF97C200CD9F0A /* CSCS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CSCS.entitlements; sourceTree = "<group>"; };
 		96F071B626EF97FD00CD9F0A /* StatsWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsWidgetsExtension.entitlements; sourceTree = "<group>"; };
+		DE2B155127E21C38005280DB /* OnboardingScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScope.swift; sourceTree = "<group>"; };
+		DE2B155427E21D2C005280DB /* SSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlideView.swift; sourceTree = "<group>"; };
+		DE2B155627E21D3A005280DB /* SSlideModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlideModesView.swift; sourceTree = "<group>"; };
+		DE2B155827E21D53005280DB /* SSlideReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlideReferencesView.swift; sourceTree = "<group>"; };
+		DE2B155B27E21E69005280DB /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
+		DE2B155D27E21E79005280DB /* XORRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XORRequestWrapper.swift; sourceTree = "<group>"; };
 		DEE1A9DA277C5BCC004E6187 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DEE1A9DB277C5BCC004E6187 /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		DEE1A9DC277C5BCC004E6187 /* RestApiTransportExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiTransportExtension.swift; sourceTree = "<group>"; };
@@ -739,6 +751,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DE2B155027E21C30005280DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B155127E21C38005280DB /* OnboardingScope.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE2B155327E21D1B005280DB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEE1AA6E277C5BCC004E6187 /* Cells */,
+				DEE1AA75277C5BCC004E6187 /* SettingsTableView.swift */,
+				DEE1AA76277C5BCC004E6187 /* SettingsTableSection.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE2B155A27E21E53005280DB /* RequestWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				DE2B155B27E21E69005280DB /* DefaultRequestWrapper.swift */,
+				DE2B155D27E21E79005280DB /* XORRequestWrapper.swift */,
+			);
+			path = RequestWrapper;
+			sourceTree = "<group>";
+		};
 		DEE1A9D7277C5BCC004E6187 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,6 +842,7 @@
 		DEE1A9EB277C5BCC004E6187 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE2B155A27E21E53005280DB /* RequestWrapper */,
 				DEE1A9EC277C5BCC004E6187 /* ImagePicker.swift */,
 				DEE1A9ED277C5BCC004E6187 /* Toast.swift */,
 			);
@@ -1239,9 +1279,10 @@
 		DEE1AA6D277C5BCC004E6187 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DEE1AA6E277C5BCC004E6187 /* Cells */,
-				DEE1AA75277C5BCC004E6187 /* SettingsTableView.swift */,
-				DEE1AA76277C5BCC004E6187 /* SettingsTableSection.swift */,
+				DE2B155327E21D1B005280DB /* TableView */,
+				DE2B155427E21D2C005280DB /* SSlideView.swift */,
+				DE2B155627E21D3A005280DB /* SSlideModesView.swift */,
+				DE2B155827E21D53005280DB /* SSlideReferencesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1593,8 +1634,9 @@
 		DEE1AAF3277C5BCC004E6187 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				DEE1AAF4277C5BCC004E6187 /* OnboardingViewController.swift */,
+				DE2B155027E21C30005280DB /* Utils */,
 				DEE1AAF5277C5BCC004E6187 /* Views */,
+				DEE1AAF4277C5BCC004E6187 /* OnboardingViewController.swift */,
 				DEE1AB17277C5BCC004E6187 /* OnboardingView.swift */,
 				DEE1AB18277C5BCC004E6187 /* OnboardingViewModel.swift */,
 			);
@@ -1604,8 +1646,8 @@
 		DEE1AAF5277C5BCC004E6187 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DEE1AAF6277C5BCC004E6187 /* OSlideWelcomeView.swift */,
 				DEE1AAF7277C5BCC004E6187 /* Atoms */,
+				DEE1AAF6277C5BCC004E6187 /* OSlideWelcomeView.swift */,
 				DEE1AB0A277C5BCC004E6187 /* OSlideReferencesView.swift */,
 				DEE1AB0B277C5BCC004E6187 /* OPushView.swift */,
 				DEE1AB0C277C5BCC004E6187 /* OSlideImproveView.swift */,
@@ -1936,6 +1978,7 @@
 				DEE1ABA6277C5BCD004E6187 /* QuestionViewCell.swift in Sources */,
 				DEE1ABF0277C5BCD004E6187 /* WelcomeSlide3View.swift in Sources */,
 				DEE1AB85277C5BCD004E6187 /* SettingsTableView.swift in Sources */,
+				DE2B155C27E21E69005280DB /* DefaultRequestWrapper.swift in Sources */,
 				DEE1AB4E277C5BCD004E6187 /* GetTestConfigResponseMapper.swift in Sources */,
 				DEE1ABE3277C5BCD004E6187 /* MainStatsView.swift in Sources */,
 				DEE1ABE5277C5BCD004E6187 /* OSlideWelcomeView.swift in Sources */,
@@ -1982,6 +2025,7 @@
 				DEE1AB53277C5BCD004E6187 /* GetQotdRequest.swift in Sources */,
 				DEE1ABF8277C5BCD004E6187 /* OSlideView.swift in Sources */,
 				DEE1AB5D277C5BCD004E6187 /* GetCourcesRequest.swift in Sources */,
+				DE2B155227E21C38005280DB /* OnboardingScope.swift in Sources */,
 				DEE1AB7E277C5BCD004E6187 /* SettingsOpener.swift in Sources */,
 				DEE1ABA4277C5BCD004E6187 /* ExplanationImageCell.swift in Sources */,
 				DEE1AB5E277C5BCD004E6187 /* GetReferencesResponseMapper.swift in Sources */,
@@ -2009,6 +2053,7 @@
 				DEE1AB54277C5BCD004E6187 /* SendAnswerRequest.swift in Sources */,
 				DEE1AB73277C5BCD004E6187 /* GetStatsResponseMapper.swift in Sources */,
 				DEE1AB82277C5BCD004E6187 /* STReferencesCell.swift in Sources */,
+				DE2B155527E21D2C005280DB /* SSlideView.swift in Sources */,
 				DEE1AB8A277C5BCD004E6187 /* SplashView.swift in Sources */,
 				DEE1AB79277C5BCD004E6187 /* SessionManagerCore.swift in Sources */,
 				DEE1ABCD277C5BCD004E6187 /* CoursesView.swift in Sources */,
@@ -2018,6 +2063,7 @@
 				DEE1AC03277C5BCD004E6187 /* OnboardingViewModel.swift in Sources */,
 				DEE1AB9F277C5BCD004E6187 /* QuestionsProgressCell.swift in Sources */,
 				DEE1ABFF277C5BCD004E6187 /* OSlideWhenTakingView.swift in Sources */,
+				DE2B155E27E21E79005280DB /* XORRequestWrapper.swift in Sources */,
 				DEE1AB6A277C5BCD004E6187 /* GetTestModeResponseMapper.swift in Sources */,
 				DEE1ABC0277C5BCD004E6187 /* TestStatsAnswerCell.swift in Sources */,
 				DEE1AB65277C5BCD004E6187 /* CoursesManager.swift in Sources */,
@@ -2036,6 +2082,7 @@
 				DEE1AB8E277C5BCD004E6187 /* SCModeCell.swift in Sources */,
 				DEE1ABC7277C5BCD004E6187 /* TestStatsViewModel.swift in Sources */,
 				DEE1ABD7277C5BCD004E6187 /* StatsCellType.swift in Sources */,
+				DE2B155927E21D53005280DB /* SSlideReferencesView.swift in Sources */,
 				DEE1AB93277C5BCD004E6187 /* SCBriefDaysView.swift in Sources */,
 				DEE1ABBE277C5BCD004E6187 /* TestStatsDescriptioCell.swift in Sources */,
 				DEE1ABAF277C5BCD004E6187 /* TestViewController.swift in Sources */,
@@ -2074,6 +2121,7 @@
 				DEE1AB20277C5BCC004E6187 /* GlobalDefinitions.swift in Sources */,
 				DEE1ABE6277C5BCD004E6187 /* OStepView.swift in Sources */,
 				DEE1AB67277C5BCD004E6187 /* TestMode.swift in Sources */,
+				DE2B155727E21D3A005280DB /* SSlideModesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2237,7 +2285,7 @@
 				CODE_SIGN_ENTITLEMENTS = CSCS/CSCS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = "$(SRCROOT)/CSCS/Resource/Info.plist";
@@ -2246,7 +2294,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "CSCS Development";
@@ -2266,7 +2314,7 @@
 				CODE_SIGN_ENTITLEMENTS = CSCS/CSCS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = "$(SRCROOT)/CSCS/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2274,7 +2322,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "CSCS AppStore";
@@ -2292,7 +2340,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2301,7 +2349,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "CSCS Stats Development";
@@ -2319,7 +2367,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2328,7 +2376,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "CSCS Stats AppStore";
