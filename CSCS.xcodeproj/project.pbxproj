@@ -281,7 +281,6 @@
 		DEB02FD9280824F10062B486 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEB02ED5280824F00062B486 /* SF-Pro-Rounded-Semibold.otf */; };
 		DEB02FDA280824F10062B486 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEB02ED6280824F00062B486 /* SF-Pro-Rounded-Regular.otf */; };
 		DEB02FDB280824F10062B486 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEB02ED7280824F00062B486 /* SF-Pro-Rounded-Bold.otf */; };
-		DEB02FDC280824F10062B486 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEB02ED9280824F00062B486 /* Info.plist */; };
 		DEB02FDD2808250B0062B486 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB02D7F280824F00062B486 /* StringExtension.swift */; };
 		DEB02FDE280825100062B486 /* Scalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB02D82280824F00062B486 /* Scalable.swift */; };
 		DEB02FDF280825180062B486 /* StatsShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB02E06280824F00062B486 /* StatsShareManager.swift */; };
@@ -1842,7 +1841,6 @@
 			files = (
 				DEB02FBD280824F10062B486 /* Onboarding.Chart.json in Resources */,
 				DEB02FDB280824F10062B486 /* SF-Pro-Rounded-Bold.otf in Resources */,
-				DEB02FDC280824F10062B486 /* Info.plist in Resources */,
 				DEB02FDA280824F10062B486 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				DEB02FD9280824F10062B486 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				DEB02FD6280824F10062B486 /* Localizable.strings in Resources */,
@@ -2339,11 +2337,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CSCS/CSCS.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = "$(SRCROOT)/CSCS/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2353,7 +2351,7 @@
 				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "CSCS Development";
+				PROVISIONING_PROFILE_SPECIFIER = "CSCS Prod";
 				SWIFT_OBJC_BRIDGING_HEADER = "CSCS/Resource/CSCS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2371,7 +2369,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = "$(SRCROOT)/CSCS/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2381,7 +2379,7 @@
 				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "CSCS AppStore";
+				PROVISIONING_PROFILE_SPECIFIER = "CSCS Prod";
 				SWIFT_OBJC_BRIDGING_HEADER = "CSCS/Resource/CSCS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2394,10 +2392,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2406,9 +2404,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs.stats;
+				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "CSCS Stats Development";
+				PROVISIONING_PROFILE_SPECIFIER = "CSCS Widget Prod";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2424,7 +2422,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2433,9 +2431,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs.stats;
+				PRODUCT_BUNDLE_IDENTIFIER = exam.cscs.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "CSCS Stats AppStore";
+				PROVISIONING_PROFILE_SPECIFIER = "CSCS Widget Prod";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
